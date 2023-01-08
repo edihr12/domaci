@@ -23,9 +23,9 @@
 var niz = [23, 45, 234, 22, 45, 67, 88, 99, 100, 1000];
 let sum = 0;
 for (const clan of niz) {
-    if (clan % 2 === 0) {
-        sum += clan;
-    }
+  if (clan % 2 === 0) {
+    sum += clan;
+  }
 }
 console.log(sum);
 
@@ -37,20 +37,41 @@ let max = array[0];
 let min = array[0];
 
 for (let i = 0; i < array.length; i++) {
-    if (array[i] > max) {
-        max = array[i];
-    }
-    if (array[i] < min) {
-        min = array[i];
-    }
+  if (array[i] > max) {
+    max = array[i];
+  }
+  if (array[i] < min) {
+    min = array[i];
+  }
 }
 
 if (max + min < 10) {
-    console.log("Zbroj je jednoznamenkast");
+  console.log('Zbroj je jednoznamenkast');
 } else {
-    console.log(max + min);
+  console.log(max + min);
 }
 
 //3
 
 let froot = process.argv.slice(2);
+let myArr = [];
+
+function isFruit(froot) {
+  if (
+    froot === 'mango' ||
+    froot === 'banana' ||
+    froot === 'avocado' ||
+    froot === 'apple' ||
+    froot === 'kiwi' ||
+    froot === 'pear' ||
+    froot === 'orange'
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+if (froot === true) {
+  var arge = myArr.slice(arguments, 0);
+}
+console.log(myArr);
